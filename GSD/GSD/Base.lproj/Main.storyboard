@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="490" y="188"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="2PL-ig-VTa">
             <objects>
-                <viewController id="HOH-on-5RU" sceneMemberID="viewController">
+                <viewController id="HOH-on-5RU" customClass="SecondViewController" customModule="GSD" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="91O-j5-4rz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -51,16 +51,25 @@
                                     <constraint firstAttribute="height" constant="462" id="yyx-wM-jaT"/>
                                 </constraints>
                             </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="SCa-Lt-jQ4">
+                                <rect key="frame" x="197" y="309" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="SCa-Lt-jQ4" firstAttribute="centerY" secondItem="jH1-gz-WWq" secondAttribute="centerY" id="DOv-zI-iSk"/>
                             <constraint firstItem="jH1-gz-WWq" firstAttribute="width" secondItem="HiV-j7-dg3" secondAttribute="width" multiplier="0.903382" constant="40" id="Yv2-Iy-z9u"/>
+                            <constraint firstItem="SCa-Lt-jQ4" firstAttribute="centerX" secondItem="jH1-gz-WWq" secondAttribute="centerX" id="Yyw-o4-Szr"/>
                             <constraint firstItem="jH1-gz-WWq" firstAttribute="top" secondItem="HiV-j7-dg3" secondAttribute="top" id="nBF-5O-oDK"/>
                             <constraint firstItem="jH1-gz-WWq" firstAttribute="centerX" secondItem="HiV-j7-dg3" secondAttribute="centerX" id="wSM-9e-7G8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HiV-j7-dg3"/>
                     </view>
                     <navigationItem key="navigationItem" id="hyf-Dr-p3p"/>
+                    <connections>
+                        <outlet property="activityIndicatot" destination="SCa-Lt-jQ4" id="Ltl-Bh-oof"/>
+                        <outlet property="imageView" destination="jH1-gz-WWq" id="PXD-Op-55h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="39w-uB-QO6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
