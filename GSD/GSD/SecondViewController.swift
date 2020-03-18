@@ -73,7 +73,7 @@ class SecondViewController: UIViewController {
         activityIndicatot.startAnimating()
         activityIndicatot.isHidden = false
         
-        // !!!!!!!!!! Применяем GSD !!!!!!!!!!
+        // !!!!!!!!!! Применяем GCD !!!!!!!!!!
         let queue = DispatchQueue.global(qos: .utility)
         queue.async {
             guard let url = self.imageUrl, let imageData = try? Data(contentsOf: url) else { return }
