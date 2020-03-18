@@ -23,7 +23,7 @@ queue.async(group: group) {
 }
 
 
-group.notify(queue: .main) { //notify - меод уведомления
+group.notify(queue: .main) { //notify - меод уведомления  по окончанию
     print("First completed")
 }
 
